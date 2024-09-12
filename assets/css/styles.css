@@ -1,3 +1,5 @@
+@import url(./presentation-component/presentation.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -6,62 +8,19 @@
 }
 
 :root {
+  /* TO-DO pensar em uma paleta de cores */
   --secondary-emphasis: #ccff33;
   --presentation-bg: #29bf12;
+
   --title-font: "Pacifico", cursive;
   --base-font: "Raleway", sans-serif;
 }
 
 html {
   font-family: var(--base-font);
-}
-
-h1 {
-  user-select: none;
-  font-size: 3.1rem;
-  color: var(--secondary-emphasis);
-  font-family: var(--title-font);
-
-  &::before {
-    content: url("../../public/svg/money.svg");
-    margin-right: 1rem;
-  }
-}
-
-.presentation {
-  background-color: var(--presentation-bg);
-  min-width: 320px;
-  padding: 0 1rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   font-size: 1.1rem;
-  align-items: center;
-
-  & div {
-    display: inherit;
-    flex-direction: inherit;
-    text-align: center;
-    gap: 1rem;
-  }
 }
 
-button {
-  font-family: var(--base-font);
-  user-select: none;
-  cursor: pointer;
-  width: 184px;
-  height: 56px;
-  font-size: 1.4rem;
-  border-radius: 8px;
-  background-color: var(--secondary-emphasis);
-  transition: all ease-in-out 0.2s;
-  &:hover {
-    filter: brightness(1.2);
-    box-shadow: 0px 0px 15px var(--secondary-emphasis);
-  }
-  &:active {
-    transform: scale(0.9);
-  }
+body {
+  min-width: 320px;
 }

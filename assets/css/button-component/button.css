@@ -1,0 +1,8 @@
+button {
+  font-family: var(--base-font);
+  user-select: none;
+  cursor: pointer;
+  width: 184px;
+  height: 56px;
+  border-radius: 8px;
+}
