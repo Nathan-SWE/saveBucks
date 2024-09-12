@@ -1,5 +1,3 @@
-const enterBtn = document.querySelector('[data-js="enter-btn"]');
+import { presentationComponent } from "./components/presentation.js";
 
-enterBtn.addEventListener("click", () => {
-  console.log("clicado");
-});
+presentationComponent();
