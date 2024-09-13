@@ -1,4 +1,5 @@
 import { createElements } from "../utils/createElements.js";
+import { getInBtn } from "./getInBtnComponent.js";
 
 const presentationComponent = () => {
   const body = document.body;
@@ -14,8 +15,8 @@ const presentationComponent = () => {
         <h1>SaveBucks</h1>
         <p>Uma simples solução para planejar o amanhã.</p>
       </section>
-      <button data-js="enter-btn">Vamos lá!</button>
     `;
+  presentation.appendChild(getInBtn());
 
   body.appendChild(presentation);
 };
