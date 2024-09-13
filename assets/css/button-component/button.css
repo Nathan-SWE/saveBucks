@@ -1,8 +1,16 @@
-button {
+button,
+.button {
   font-family: var(--base-font);
   user-select: none;
   cursor: pointer;
   width: 184px;
   height: 56px;
   border-radius: 8px;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    filter: brightness(1.2);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
 }

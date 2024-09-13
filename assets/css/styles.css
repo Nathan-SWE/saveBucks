@@ -1,16 +1,19 @@
 @import url(./presentation-component/presentation.css);
+@import url(./login-component/login.css);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
+  text-decoration: none;
 }
 
 :root {
   /* TO-DO pensar em uma paleta de cores */
   --secondary-emphasis: #ccff33;
   --presentation-bg: #29bf12;
+  --footer-bg: chacoal;
 
   --title-font: "Pacifico", cursive;
   --base-font: "Raleway", sans-serif;
@@ -18,9 +21,55 @@
 
 html {
   font-family: var(--base-font);
-  font-size: 1.1rem;
 }
 
 body {
   min-width: 320px;
+}
+
+h1,
+h2 {
+  user-select: none;
+  font-size: 3.1rem;
+  color: var(--secondary-emphasis);
+  font-family: var(--title-font);
+
+  &::before {
+    content: url("../../public/svg/money.svg");
+    margin-right: 1rem;
+  }
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin: 0 1rem;
+}
+
+a {
+  color: black;
+  &:hover {
+    color: royalblue;
+  }
+}
+
+footer {
+  background-color: darkolivegreen;
+  & section {
+    padding: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  footer {
+    & section {
+      height: 166px;
+    }
+  }
 }
