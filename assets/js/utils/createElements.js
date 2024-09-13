@@ -1,11 +1,11 @@
-const createElements = () => {
-  const section = document.createElement("section");
-  const div = document.createElement("div");
-  const h1 = document.createElement("h1");
-  const p = document.createElement("p");
-  const button = document.createElement("button");
+const createElements = (...elementNames) => {
+  const createdElements = {};
 
-  return { section, div, h1, p, button };
+  elementNames.forEach((elementName) => {
+    createdElements[elementName] = document.createElement(elementName);
+  });
+
+  return createdElements;
 };
 
 export { createElements };
