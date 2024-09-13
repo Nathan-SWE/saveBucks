@@ -2,7 +2,15 @@ import { createElements } from "../utils/createElements.js";
 
 const presentationComponent = () => {
   const body = document.body;
-  const { section, div, h1, p, button } = createElements();
+  const fragment = document.createDocumentFragment();
+
+  const { section, div, h1, p, button } = createElements(
+    "section",
+    "div",
+    "h1",
+    "p",
+    "button"
+  );
 
   section.classList.add("presentation");
   section.appendChild(div);
@@ -14,7 +22,9 @@ const presentationComponent = () => {
 
   button.setAttribute("data-js", "enter-btn");
   button.textContent = `Vamos lá!`;
-  body.append(section);
+
+  fragment.appendChild(section);
+  body.appendChild(fragment);
 };
 
 export { presentationComponent };
