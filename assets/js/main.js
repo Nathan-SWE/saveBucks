@@ -1,3 +1,5 @@
-import { presentationComponent } from "./components/presentation.js";
+import { presentationComponent } from "./components/presentationComponent.js";
+import { loginComponent } from "./components/loginComponent.js";
 
 presentationComponent();
+loginComponent();
