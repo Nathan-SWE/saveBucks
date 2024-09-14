@@ -18,13 +18,12 @@ const userInputsComponents = () => {
       name="email"
       id="signInEmail"
       placeholder="example@email.com" 
-      autocomplete="username"
-      required/>
+      autocomplete="username" />
     <button class="test-user">?</button>
 
     <label for="signInPassword">Senha:</label>
-    <input type="password" name="password" id="signInPassword" autocomplete="current-password" required/>
-    <button class="password-hidden">
+    <input type="password" name="password" id="signInPassword" autocomplete="current-password" />
+    <button class="password-hidden" data-js="eyeBtn">
       <img src=${eyeStatus} alt="hide-password" />
     </button>
     <a href="#">Esqueceu a senha?</a>
