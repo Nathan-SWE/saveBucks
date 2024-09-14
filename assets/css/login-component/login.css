@@ -3,9 +3,9 @@
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
-  justify-content: space-around;
   padding: 0 1rem;
+  height: 100%;
+  justify-content: space-around;
   & header {
     text-align: center;
   }
@@ -16,11 +16,15 @@
   border-radius: 16px;
   display: inherit;
   flex-direction: inherit;
+  width: 100%;
   padding: 1rem;
 
   & .actions {
     display: inherit;
     justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
 
     & button {
       font-size: 1.1rem;
@@ -44,7 +48,7 @@
       position: absolute;
       height: 40px;
       right: 0px;
-      top: 35px;
+      top: 45px;
       width: 40px;
       font-size: 1.6rem;
       font-weight: bold;
@@ -61,15 +65,16 @@
     & .password-hidden,
     .password-hidden--2nd,
     .password-hidden--3nd {
-      top: 112px;
+      top: 129px;
       background: none;
     }
+
     & .password-hidden--2nd {
-      top: 188px;
+      top: 215px;
     }
 
     & .password-hidden--3nd {
-      top: 262px;
+      top: 300px;
     }
 
     & a {
@@ -78,7 +83,7 @@
   }
 
   & label {
-    margin-top: 1rem;
+    margin-top: 1.6rem;
   }
 
   & input {
@@ -109,7 +114,9 @@
   }
 
   & .submit {
+    margin: 0 auto;
     margin-top: 2rem;
+    max-width: 200px;
   }
 
   & .social-auth {
@@ -118,6 +125,7 @@
 
     & p {
       margin: 2rem 0;
+      font-size: 1.6rem;
       &::before,
       &::after {
         content: "";
@@ -125,7 +133,7 @@
         width: 35%;
         margin-right: 1rem;
         border-bottom: 2px solid black;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
       }
 
       &::after {
@@ -152,12 +160,6 @@
   }
 }
 
-@media screen and (min-height: 768px) {
-  .login {
-    height: calc(100vh - 166px);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .form {
     width: 70vw;
@@ -168,6 +170,6 @@
 @media screen and (min-width: 1024px) {
   .form {
     width: 40vw;
-    max-width: 900px;
+    max-width: 500px;
   }
 }

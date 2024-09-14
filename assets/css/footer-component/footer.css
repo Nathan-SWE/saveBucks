@@ -1,5 +1,6 @@
 footer {
   background-color: darkolivegreen;
+  margin-top: 4rem;
   & section {
     padding: 1rem;
     max-width: 1440px;
@@ -9,13 +10,5 @@ footer {
     justify-content: space-between;
     align-items: center;
     line-height: 1.6;
-  }
-}
-
-@media screen and (min-height: 768px) {
-  footer {
-    & section {
-      height: 166px;
-    }
   }
 }
