@@ -1,6 +1,7 @@
 @import url(./presentation-component/presentation.css);
 @import url(./login-component/login.css);
 @import url(./animations/presentationTrasition.css);
+@import url(./footer-component/footer.css);
 
 * {
   margin: 0;
@@ -53,27 +54,5 @@ a {
   color: black;
   &:hover {
     color: royalblue;
-  }
-}
-
-footer {
-  background-color: darkolivegreen;
-  & section {
-    padding: 1rem;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 1.6;
-  }
-}
-
-@media screen and (min-height: 768px) {
-  footer {
-    & section {
-      height: 166px;
-    }
   }
 }
