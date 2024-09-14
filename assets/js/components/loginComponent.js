@@ -1,5 +1,5 @@
 import { createElements } from "../utils/createElements.js";
-import { handleForms } from "../utils/formsHandler.js";
+import { handleForms, privacyPassword } from "../utils/formsHandler.js";
 import { signInForm } from "./signInFormComponent.js";
 
 const loginComponent = () => {
@@ -31,6 +31,7 @@ const loginComponent = () => {
   body.appendChild(loginSection);
 
   handleForms(form);
+  privacyPassword(form);
 };
 
 export { loginComponent };

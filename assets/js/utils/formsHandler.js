@@ -35,4 +35,26 @@ const handleForms = (form) => {
   });
 };
 
-export { handleForms };
+const privacyPassword = (form) => {
+  const eyeShow = "../../../public/svg/eye-password-show.svg";
+  const eyeHide = "../../../public/svg/eye-password-hide.svg";
+
+  form.addEventListener("click", (e) => {
+    const eyeBtn = e.target.closest('[data-js="eyeBtn"]');
+
+    if (eyeBtn) {
+      e.preventDefault();
+      const eyeImg = eyeBtn.querySelector("img");
+      const passwordInput = eyeBtn.previousElementSibling;
+      if (eyeImg.src.includes("eye-password-show.svg")) {
+        eyeImg.src = eyeHide;
+        passwordInput.type = "password";
+      } else {
+        eyeImg.src = eyeShow;
+        passwordInput.type = "text";
+      }
+    }
+  });
+};
+
+export { handleForms, privacyPassword };
