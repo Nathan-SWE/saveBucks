@@ -9,12 +9,8 @@
   justify-content: space-around;
   align-items: center;
 
-  & div {
-    display: inherit;
-    flex-direction: inherit;
+  & p {
     text-align: center;
-    gap: 1rem;
-    font-size: 1.1rem;
   }
 
   & button {

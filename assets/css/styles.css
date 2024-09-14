@@ -22,6 +22,9 @@
 
 html {
   font-family: var(--base-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -31,7 +34,7 @@ body {
 h1,
 h2 {
   user-select: none;
-  font-size: 3.1rem;
+  font-size: 3rem;
   color: var(--secondary-emphasis);
   font-family: var(--title-font);
 
