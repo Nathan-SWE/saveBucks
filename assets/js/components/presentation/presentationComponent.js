@@ -1,4 +1,4 @@
-import { createElements } from "../utils/createElements.js";
+import { createElements } from "../../utils/createElements.js";
 import { getInBtn } from "./getInBtnComponent.js";
 
 const presentationComponent = () => {

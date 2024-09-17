@@ -1,2 +1,2 @@
-import { presentationComponent } from "./components/presentationComponent.js";
+import { presentationComponent } from "./components/presentation/presentationComponent.js";
 presentationComponent();
