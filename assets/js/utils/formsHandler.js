@@ -1,5 +1,5 @@
-import { singUpComponent } from "../components/singUpFormComponent.js";
-import { signInForm } from "../components/signInFormComponent.js";
+import { singUpComponent } from "../components/form/singUpFormComponent.js";
+import { signInForm } from "../components/form/signInFormComponent.js";
 
 const handleForms = (form) => {
   form.addEventListener("submit", (e) => {

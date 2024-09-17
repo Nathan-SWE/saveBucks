@@ -1,4 +1,4 @@
-import { createElements } from "../utils/createElements.js";
+import { createElements } from "../../utils/createElements.js";
 
 const socialAuthComponent = () => {
   const googleIcon = "../../../public/svg/google-original.svg";

@@ -1,4 +1,4 @@
-import { createElements } from "../utils/createElements.js";
+import { createElements } from "../../utils/createElements.js";
 
 const userInputsComponents = () => {
   const eyeStatus = "../../../public/svg/eye-password-hide.svg";

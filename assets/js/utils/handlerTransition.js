@@ -1,4 +1,4 @@
-import { loginComponent } from "../components/loginComponent.js";
+import { loginComponent } from "../components/form/loginComponent.js";
 
 const handlerTransition = (btn) => {
   btn.addEventListener("click", () => {

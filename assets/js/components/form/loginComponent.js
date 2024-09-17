@@ -1,6 +1,6 @@
-import { addFooter } from "../utils/addFooter.js";
-import { createElements } from "../utils/createElements.js";
-import { handleForms, privacyPassword } from "../utils/formsHandler.js";
+import { addFooter } from "../../utils/addFooter.js";
+import { createElements } from "../../utils/createElements.js";
+import { handleForms, privacyPassword } from "../../utils/formsHandler.js";
 import { signInForm } from "./signInFormComponent.js";
 
 const loginComponent = () => {
