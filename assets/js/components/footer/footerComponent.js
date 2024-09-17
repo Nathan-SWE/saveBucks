@@ -1,7 +1,7 @@
 import { createElements } from "../../utils/createElements.js";
 
 const footerComponent = () => {
-  const termsPoliciesPage = "../assets/pages/termsPolicies.html";
+  const termsPoliciesPage = "/assets/pages/termsPolicies.html";
 
   const { footer } = createElements({
     footer: 1,

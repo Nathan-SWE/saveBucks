@@ -2,7 +2,7 @@ import { createElements } from "../../utils/createElements.js";
 
 const singUpComponent = () => {
   const eyeStatus = "../../../public/svg/eye-password-hide.svg";
-  const termsPoliciesPage = "../assets/pages/termsPolicies.html";
+  const termsPoliciesPage = "/assets/pages/termsPolicies.html";
 
   const { div } = createElements({
     div: 1,
