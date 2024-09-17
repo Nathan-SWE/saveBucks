@@ -2,6 +2,7 @@ import { createElements } from "../utils/createElements.js";
 
 const singUpComponent = () => {
   const eyeStatus = "../../../public/svg/eye-password-hide.svg";
+  const termsPoliciesPage = "../assets/pages/termsPolicies.html";
 
   const { div } = createElements({
     div: 1,
@@ -37,7 +38,7 @@ const singUpComponent = () => {
     <div class="termsPolicies">
       <input type="checkbox" name="checkTerms" id="termsPolicies" />
       <p>Li e estou de acordo com os
-        <a href="#">Termos de Uso e Politicas de Privacidade.</a>
+        <a href=${termsPoliciesPage} target="_blank">Termos de Uso e Politicas de Privacidade.</a>
       </p>
     </div>
     <input class="submit button" type="submit" value="Cadastrar" />
