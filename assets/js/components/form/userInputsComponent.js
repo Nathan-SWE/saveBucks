@@ -19,7 +19,7 @@ const userInputsComponents = () => {
       id="signInEmail"
       placeholder="example@email.com" 
       autocomplete="username" />
-    <button class="test-user">?</button>
+    <button data-js="testUser" class="test-user">?</button>
 
     <label for="signInPassword">Senha:</label>
     <input type="password" name="password" id="signInPassword" autocomplete="current-password" />
