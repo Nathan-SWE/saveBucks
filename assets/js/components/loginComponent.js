@@ -1,6 +1,6 @@
+import { addFooter } from "../utils/addFooter.js";
 import { createElements } from "../utils/createElements.js";
 import { handleForms, privacyPassword } from "../utils/formsHandler.js";
-import { footerComponent } from "./footerComponent.js";
 import { signInForm } from "./signInFormComponent.js";
 
 const loginComponent = () => {
@@ -30,7 +30,7 @@ const loginComponent = () => {
 
   form.appendChild(signInForm());
   body.appendChild(loginSection);
-  body.appendChild(footerComponent());
+  addFooter();
 
   handleForms(form);
   privacyPassword(form);
