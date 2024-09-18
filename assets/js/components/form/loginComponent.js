@@ -12,7 +12,7 @@ const loginComponent = () => {
   });
 
   const loginSection = section[0];
-  loginSection.classList.add("login");
+  loginSection.classList.add("form-header");
 
   loginSection.innerHTML = `
     <header>

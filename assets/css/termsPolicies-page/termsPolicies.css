@@ -4,7 +4,9 @@
   gap: 2rem;
   line-height: 1.6;
   padding: 0 1rem;
+  margin: 0 auto;
   margin-bottom: 2rem;
+  max-width: 1440px;
 
   & p {
     font-size: 1.3rem;

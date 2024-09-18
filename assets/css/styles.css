@@ -59,6 +59,7 @@ a {
   }
 }
 
+/* provavelmente será removido, já que o botão de teste será temporário */
 .tester-modal {
   margin: auto;
   box-shadow: 0px 0px 5px gray;
