@@ -13,7 +13,7 @@ const handlerTransition = (btn) => {
         body.innerHTML = "";
         loginComponent();
 
-        const loginSection = document.querySelector(".login");
+        const loginSection = document.querySelector(".form-header");
         loginSection.classList.add("slide-in");
       },
       { once: true }
