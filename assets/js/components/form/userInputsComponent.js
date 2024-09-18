@@ -2,6 +2,7 @@ import { createElements } from "../../utils/createElements.js";
 
 const userInputsComponents = () => {
   const eyeStatus = "../../../public/svg/eye-password-hide.svg";
+  const recoveryPage = "/assets/pages/recovery.html";
 
   const { div } = createElements({
     div: 1,
@@ -26,7 +27,7 @@ const userInputsComponents = () => {
     <button class="password-hidden" data-js="eyeBtn">
       <img src=${eyeStatus} alt="hide-password" />
     </button>
-    <a href="#">Esqueceu a senha?</a>
+    <a href=${recoveryPage} target="_blank">Esqueceu a senha?</a>
 
     <input class="submit button" type="submit" value="Entrar" />
   `;
