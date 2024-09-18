@@ -36,8 +36,8 @@ const handleForms = (form) => {
 };
 
 const privacyPassword = (form) => {
-  const eyeShow = "../../../public/svg/eye-password-show.svg";
-  const eyeHide = "../../../public/svg/eye-password-hide.svg";
+  const eyeShow = "./public/svg/eye-password-show.svg";
+  const eyeHide = "./public/svg/eye-password-hide.svg";
 
   form.addEventListener("click", (e) => {
     const eyeBtn = e.target.closest('[data-js="eyeBtn"]');

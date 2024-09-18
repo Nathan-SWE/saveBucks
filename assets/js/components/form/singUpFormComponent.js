@@ -1,7 +1,7 @@
 import { createElements } from "../../utils/createElements.js";
 
 const singUpComponent = () => {
-  const eyeStatus = "../../../public/svg/eye-password-hide.svg";
+  const eyeStatus = "./public/svg/eye-password-hide.svg";
   const termsPoliciesPage = "/assets/pages/termsPolicies.html";
 
   const { div } = createElements({
@@ -24,16 +24,20 @@ const singUpComponent = () => {
       autocomplete="email"/>
 
     <label for="signInPassword">Senha:</label>
-    <input type="password" name="password" id="signInPassword" autocomplete="new-password" />
-    <button class="password-hidden--2nd" data-js="eyeBtn">
-      <img src=${eyeStatus} alt="hide-password" />
-    </button>
+    <div class="input-container">
+      <input type="password" name="password" id="signInPassword" autocomplete="new-password" />
+      <button class="password-hidden" data-js="eyeBtn">
+        <img src=${eyeStatus} alt="hide-password" />
+      </button>
+    </div>
 
     <label for="confirmPassword">Confirmar senha:</label>
-    <input type="password" name="password" id="confirmPassword" autocomplete="new-password" />
-    <button class="password-hidden--3nd" data-js="eyeBtn">
-      <img src=${eyeStatus} alt="hide-password" />
-    </button>
+    <div class="input-container">
+      <input type="password" name="password" id="confirmPassword" autocomplete="new-password" />
+      <button class="password-hidden" data-js="eyeBtn">
+        <img src=${eyeStatus} alt="hide-password" />
+      </button>
+    </div>
 
     <div class="termsPolicies">
       <input type="checkbox" name="checkTerms" id="termsPolicies" />
