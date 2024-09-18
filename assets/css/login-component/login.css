@@ -31,6 +31,18 @@
     }
   }
 
+  & .mailUser-input {
+    display: flex;
+    background-color: #c8c8c8;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    height: 40px;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6e6e6e;
+  }
+
   & .user-inputs {
     width: 100%;
     display: flex;
@@ -38,45 +50,31 @@
     flex-direction: column;
     position: relative;
 
+    & .input-container {
+      display: flex;
+      background-color: #c8c8c8;
+      border-radius: 0.5rem;
+    }
+
     & .test-user,
-    .password-hidden,
-    .password-hidden--2nd,
-    .password-hidden--3nd {
-      position: absolute;
+    .password-hidden {
       height: 40px;
-      right: 0px;
-      top: 44px;
       width: 40px;
       font-size: 1.6rem;
       font-weight: bold;
-      background: gray;
+      background: transparent;
       border: 2px solid transparent;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+
       &.test-user:hover {
         color: orange;
         border: 2px solid;
       }
     }
 
-    & .password-hidden,
-    .password-hidden--2nd,
-    .password-hidden--3nd {
-      top: 129px;
-      background: none;
-    }
-
-    & .password-hidden--2nd {
-      top: 215px;
-    }
-
-    & .password-hidden--3nd {
-      top: 300px;
-    }
-
     & a {
+      width: fit-content;
       margin-top: 1rem;
-      text-align: right;
+      margin-left: auto;
     }
   }
 
@@ -87,10 +85,10 @@
   & input {
     font-family: var(--base-font);
     font-size: 1.1rem;
-    background-color: rgba(128, 128, 128, 0.432);
+    background-color: #c8c8c8;
     height: 40px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding-left: 0.5rem;
   }
 
