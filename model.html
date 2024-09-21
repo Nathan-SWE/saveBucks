@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="public/svg/money.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>SaveBucks</title>
 
     <!-- fonts -->
@@ -21,16 +21,30 @@
 
     <!-- scripts -->
     <!-- <script type="module" src="assets/js/main.js"></script> -->
+    <script defer src="test.js"></script>
   </head>
   <body>
-    <header>
-      <section>
+    <header class="header-app-container">
+      <section class="header-app-section">
         <h1>SaveBucks</h1>
-        <div>
-          <button>EN</button>
-          <button>Dark Mode</button>
+
+        <div class="header-app-actions">
+          <button class="header-lang-btn hidden">EN</button>
+          <button class="header-darkmode-btn hidden">🌜Dark Mode</button>
           <span>Olá {usuário}</span>
-          <button>menu</button>
+          <button class="menu-btn"></button>
+
+          <ul class="menu-mobile hidden">
+            <li><button class="header-lang-btn">EN</button></li>
+            <li>
+              <button class="header-darkmode-btn">🌜Tema escuro</button>
+            </li>
+            <li>
+              <button class="header-config-btn">
+                Configurações
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
     </header>
@@ -42,22 +56,25 @@
         <section><h2>Saída</h2></section>
       </header>
 
-      <section>
+      <section class="app-section">
         <h2>Economias</h2>
       </section>
 
-      <section>
+      <section class="app-section">
         <h2>Registro de gastos</h2>
       </section>
 
-      <section>
+      <section class="app-section">
         <h2>Histórico</h2>
       </section>
 
-      <section>
+      <section class="app-section">
         <h2>investimentos</h2>
       </section>
     </main>
-    <!-- <footer></footer> -->
+    <script type="module">
+      import { addFooter } from "./assets/js/utils/addFooter.js";
+      addFooter();
+    </script>
   </body>
 </html>

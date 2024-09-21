@@ -1,0 +1,121 @@
+.header-app-container {
+  background-color: darkolivegreen;
+}
+
+.header-app-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1rem;
+}
+
+.header-app-actions {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: right;
+  align-items: center;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.header-lang-btn {
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.header-darkmode-btn {
+  height: 50px;
+  width: fit-content;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+.menu-btn {
+  display: grid;
+  place-items: center;
+  background: url("../../../public/svg/menu.svg") center / cover no-repeat;
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  z-index: 10;
+}
+
+.menu-mobile {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: -8px;
+  right: -8px;
+  width: 200px;
+  height: auto;
+  border-radius: 0.5rem;
+  padding: 4.05rem 0rem 1rem 0rem;
+  background-color: rgb(180, 158, 84);
+}
+
+.menu-mobile li {
+  border-bottom: 1px solid black;
+}
+
+.menu-mobile .header-darkmode-btn,
+.menu-mobile .header-config-btn,
+.menu-mobile .header-lang-btn {
+  background: gray;
+  border-radius: 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.app-section {
+  height: 400px;
+}
+
+@media screen and (min-width: 480px) {
+  .header-app-section {
+    flex-direction: row;
+  }
+
+  .menu-mobile {
+    padding-top: 5.39rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-app-actions {
+    width: 190px;
+  }
+
+  .header-darkmode-btn,
+  .header-lang-btn {
+    display: block;
+  }
+
+  .menu-mobile {
+    top: 60px;
+    padding-top: 3.9rem;
+  }
+
+  .menu-mobile li {
+    border-bottom: none;
+  }
+
+  .menu-mobile li:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .menu-mobile .header-darkmode-btn,
+  .menu-mobile .header-lang-btn {
+    display: none;
+  }
+}
