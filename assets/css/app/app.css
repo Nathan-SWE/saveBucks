@@ -78,7 +78,8 @@
 }
 
 .app-section {
-  height: 400px;
+  height: 200px;
+  border-bottom: 2px solid;
 }
 
 @media screen and (min-width: 480px) {
