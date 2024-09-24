@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="public/svg/money.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>SaveBucks</title>
+    <title>SaveBucks - Gerenciador Financeiro</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,54 +23,120 @@
     <script defer src="test.js"></script>
   </head>
   <body>
-    <header class="header-app-container">
+    <header class="header-app-container" role="banner">
       <section class="header-app-section">
         <h1>SaveBucks</h1>
 
-        <div class="header-app-actions">
-          <button class="header-lang-btn hidden">EN</button>
-          <button class="header-darkmode-btn hidden">🌜Dark Mode</button>
-          <span>Olá {usuário}</span>
-          <button class="menu-btn"></button>
-
-          <ul class="menu-mobile hidden">
-            <li><button class="header-lang-btn">EN</button></li>
+        <nav aria-label="Ações do cabeçalho">
+          <ul class="header-app-actions" role="list">
             <li>
-              <button class="header-darkmode-btn">🌜Tema escuro</button>
+              <button
+                class="header-lang-btn hidden"
+                aria-label="Alterar idioma para inglês"
+              >
+                EN
+              </button>
             </li>
             <li>
-              <button class="header-config-btn">
+              <button
+                class="header-darkmode-btn hidden"
+                aria-label="Ativar modo escuro"
+              >
+                🌜Dark Mode
+              </button>
+            </li>
+            <li><span aria-live="polite">Olá, {usuário}</span></li>
+            <li>
+              <button
+                class="menu-btn"
+                aria-expanded="false"
+                aria-controls="menu-mobile"
+                aria-label="Abrir menu"
+              ></button>
+            </li>
+          </ul>
+        </nav>
+
+        <nav
+          id="menu-mobile"
+          class="menu-mobile hidden"
+          role="navigation"
+          aria-label="Menu de navegação"
+        >
+          <ul role="list">
+            <li>
+              <button
+                class="header-lang-btn"
+                aria-label="Alterar idioma para inglês"
+              >
+                EN
+              </button>
+            </li>
+            <li>
+              <button
+                class="header-darkmode-btn"
+                aria-label="Ativar modo escuro"
+              >
+                🌜Tema escuro
+              </button>
+            </li>
+            <li>
+              <button
+                class="header-config-btn"
+                aria-label="Abrir configurações"
+              >
                 Configurações
               </button>
             </li>
           </ul>
-        </div>
+        </nav>
       </section>
     </header>
 
-    <main>
-      <header>
-        <section><h2>Saldo</h2></section>
-        <section><h2>Entrada</h2></section>
-        <section><h2>Saída</h2></section>
-      </header>
-
-      <section class="app-section">
-        <h2>Economias</h2>
+    <main role="main">
+      <section aria-labelledby="saldo-header">
+        <header>
+          <h2 id="saldo-header">Saldo</h2>
+        </header>
       </section>
 
-      <section class="app-section">
-        <h2>Registro de gastos</h2>
+      <section aria-labelledby="entrada-header">
+        <header>
+          <h2 id="entrada-header">Entrada</h2>
+        </header>
       </section>
 
-      <section class="app-section">
-        <h2>Histórico</h2>
+      <section aria-labelledby="saida-header">
+        <header>
+          <h2 id="saida-header">Saída</h2>
+        </header>
       </section>
 
-      <section class="app-section">
-        <h2>investimentos</h2>
+      <section class="app-section" aria-labelledby="economias-header">
+        <header>
+          <h2 id="economias-header">Economias</h2>
+        </header>
+      </section>
+
+      <section class="app-section" aria-labelledby="registro-gastos-header">
+        <header>
+          <h2 id="registro-gastos-header">Registro de gastos</h2>
+        </header>
+      </section>
+
+      <section class="app-section" aria-labelledby="historico-header">
+        <header>
+          <h2 id="historico-header">Histórico</h2>
+        </header>
+      </section>
+
+      <section class="app-section" aria-labelledby="investimentos-header">
+        <header>
+          <h2 id="investimentos-header">Investimentos</h2>
+        </header>
       </section>
     </main>
+
     <script type="module">
       import { addFooter } from "./assets/js/utils/addFooter.js";
       addFooter();
