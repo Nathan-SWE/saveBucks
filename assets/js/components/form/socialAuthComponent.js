@@ -1,9 +1,9 @@
 import { createElements } from "../../utils/createElements.js";
 
 const socialAuthComponent = () => {
-  const googleIcon = "../../../public/svg/google-original.svg";
-  const fbIcon = "../../../public/svg/facebook-original.svg";
-  const githubIcon = "../../../public/svg/github-original.svg";
+  const googleIcon = "./public/svg/google-original.svg";
+  const fbIcon = "./public/svg/facebook-original.svg";
+  const githubIcon = "./public/svg/github-original.svg";
 
   const { fieldset } = createElements({
     fieldset: 1,
